@@ -1,6 +1,6 @@
 {
     "title": "UnitCare Explorer",
-    "server": "https://explorer.unitcare.co/api",
+    "server": "https://dexplorer.unitcare.co/api",
     "alias": "Development",
     "activeDelegates": 51,
     "rewardOffset": 10800,
