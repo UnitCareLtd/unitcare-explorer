@@ -7,8 +7,8 @@
     "currencies": [],
     "knownWallets": {},
     "defaults": {
-        "token": "UnitCare Token",
-        "symbol": "UCT",
+        "token": "UnitCare Test Token",
+        "symbol": "UCTT",
         "currency": null,
         "priceChartOptions": {
             "enabled": false,
