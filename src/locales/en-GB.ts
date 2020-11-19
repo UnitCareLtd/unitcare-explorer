@@ -37,7 +37,7 @@ export default {
       "The following page is a directory for informational purposes only. {website} is in no way affiliated with the listed individuals and/or business and bridgechain entities listed herein. All links provided herein are third party websites that have not been verified and are owned by independent parties over which {website} has no control. {website} does not endorse or approve and makes no warranties, representations or undertakings relating to the content of third party websites.",
     TEXT2: "By clicking “Accept” you will be confirming that you have read and are in agreement with all terms herein.",
     TEXT3:
-      "I agree by choosing to display the vendorfield, you accept that text from third parties outside of {website}'s control may post text that cannot be censored, removed, or manipulated. {website} assumes no responsibility for the content and/or nature of the text displayed and the harm and/or liability that may arise over accessing such text.",
+      "I agree by choosing to display the vendor field, you accept that text from third parties outside of {website}'s control may post text that cannot be censored, removed, or manipulated. {website} assumes no responsibility for the content and/or nature of the text displayed and the harm and/or liability that may arise over accessing such text.",
   },
 
   MARKET_CHART: {
@@ -78,7 +78,7 @@ export default {
       MIN: "Minimum participants",
       LIFETIME: "Lifetime",
       PARTICIPANTS: "Participants",
-      LEGACY_NOTICE: "This transaction is a legacy Multisignature Registration",
+      LEGACY_NOTICE: "This transaction is a legacy Multi-signature Registration",
     },
     NONCE: "Nonce",
     TIMELOCK: {
@@ -101,7 +101,7 @@ export default {
       DELEGATE_REGISTRATION: "Delegate Registration",
       VOTE: "Vote",
       UNVOTE: "Unvote",
-      MULTI_SIGNATURE: "Multisignature Registration",
+      MULTI_SIGNATURE: "Multi-signature Registration",
       IPFS: "IPFS",
       LOCKS: "Locks",
       TIMELOCK: "Timelock",
@@ -172,7 +172,7 @@ export default {
     BALANCE: "Balance ({token})",
     LOCKED_BALANCE: "Locked Balance",
     SECOND_PASSPHRASE_ENABLED: "Second signature enabled",
-    MULTI_SIGNATURE_WALLET: "Multisignature wallet",
+    MULTI_SIGNATURE_WALLET: "Multi-signature wallet",
     SUMMARY: "Wallet summary",
     QR_CODE: "QR Code",
     SCAN_FOR_ADDRESS: "Scan for address",

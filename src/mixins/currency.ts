@@ -36,7 +36,7 @@ export default {
       bigNumberValue = bigNumberValue.times(rate || BigNumber.make(store.getters["currency/rate"]));
 
       const cryptos: { [key: string]: string } = {
-        ARK: "Ѧ",
+        UNITCARE: "Ѧ",
         BTC: "Ƀ",
         ETH: "Ξ",
         LTC: "Ł",
