@@ -1,8 +1,8 @@
 {
     "name": "unitcare-explorer",
-    "version": "3.0.0",
+    "version": "1.0.0",
     "description": "A Blockchain Explorer for UnitCare using Vue.js and Tailwind CSS",
-    "author": "Brian Faust",
+    "author": "UnitCare Corporation Ltd.",
     "scripts": {
         "serve": "vue-cli-service serve",
         "build": "vue-cli-service build",
