@@ -22,7 +22,7 @@
         "USD": "$"
     },
     "defaults": {
-        "token": "UnitCare",
+        "token": "UnitCare Token",
         "symbol": "UCT",
         "currency": {
             "name": "USD",
