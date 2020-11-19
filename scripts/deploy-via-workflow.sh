@@ -20,4 +20,4 @@ git add -A
 git commit -m 'deploy [ci skip]'
 
 # deploy
-git push -f https://${GH_PAGES_TOKEN}@github.com/ArkEcosystem/explorer.git master:gh-pages
+git push -f https://${GH_PAGES_TOKEN}@github.com/UnitCare/explorer.git master:gh-pages
