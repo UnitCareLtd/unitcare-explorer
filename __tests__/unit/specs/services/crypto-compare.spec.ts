@@ -3,13 +3,13 @@ import store from "@/store";
 
 describe("Services > CryptoCompare", () => {
   beforeAll(() => {
-    store.dispatch("network/setServer", "https://explorer.ark.io/api");
+    store.dispatch("network/setServer", "https://explorer.unitcare.co/api");
     store.dispatch("network/setAlias", "Main");
-    store.dispatch("network/setToken", "ARK");
+    store.dispatch("network/setToken", "UCT");
     store.dispatch("currency/setName", "USD");
   });
 
-  it("should return price for ARK in given currency", async () => {
+  it("should return price for UnitCare Token in given currency", async () => {
     const data = await CryptoCompareService.price("USD");
     expect(data).toBeGreaterThan(0);
   });
@@ -44,8 +44,8 @@ describe("Services > CryptoCompare", () => {
     expect(data.datasets.length).toBeGreaterThanOrEqual(366);
   });
 
-  it("should return year values, even if token matches currency", async () => {
-    store.dispatch("currency/setName", "ARK");
+  it("should return year values, even if UnitCare token matches currency", async () => {
+    store.dispatch("currency/setName", "UCT");
     const data = await CryptoCompareService.year();
     expect(data.labels.length).toBeGreaterThanOrEqual(366);
     expect(data.datasets.length).toBeGreaterThanOrEqual(366);
@@ -66,7 +66,7 @@ describe("Services > CryptoCompare", () => {
 
   it("should return null if not on Main network", async () => {
     store.dispatch("network/setAlias", "Development");
-    store.dispatch("currency/setName", "DARK");
+    store.dispatch("currency/setName", "UCT");
     const data = await CryptoCompareService.dailyAverage(1535190579);
     expect(data).toBe(null);
   });

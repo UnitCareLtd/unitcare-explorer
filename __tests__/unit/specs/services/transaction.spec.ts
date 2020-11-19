@@ -36,7 +36,7 @@ const multiSigTransactionPropertyArray = [
 
 describe("Services > Transaction", () => {
   beforeAll(() => {
-    store.dispatch("network/setServer", "https://explorer.ark.io/api");
+    store.dispatch("network/setServer", "https://explorer.unitcare.co/api");
   });
 
   it("should return the latest transactions ordered by timestamp descending", async () => {
@@ -223,7 +223,7 @@ describe("Services > Transaction", () => {
 
 describe("Services > Transaction (2.6)", () => {
   beforeAll(() => {
-    store.dispatch("network/setServer", "https://dexplorer.ark.io/api/v2");
+    store.dispatch("network/setServer", "https://dexplorer.unitcare.co/api/v2");
   });
 
   it("should return all transactions that have 'test' in their smartbridge field", async () => {

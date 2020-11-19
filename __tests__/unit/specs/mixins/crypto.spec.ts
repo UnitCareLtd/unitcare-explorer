@@ -1,4 +1,4 @@
-import { Managers } from "@arkecosystem/crypto";
+import { Managers } from "@unitcareecosystem/crypto";
 import { createLocalVue, shallowMount, Wrapper } from "@vue/test-utils";
 import CryptoMixin from "@/mixins/crypto";
 import store from "@/store";

@@ -23,14 +23,14 @@ describe("Mixins > Network", () => {
 
   describe("networkToken", () => {
     it("should return the set network token", () => {
-      store.dispatch("network/setToken", "ARK");
-      expect(wrapper.vm.networkToken()).toEqual("ARK");
+      store.dispatch("network/setToken", "UCT");
+      expect(wrapper.vm.networkToken()).toEqual("UCT");
     });
 
     it("should return the default network token", () => {
       store.dispatch("network/setToken", null);
-      store.dispatch("network/setDefaults", { token: "DEFAULTARK" });
-      expect(wrapper.vm.networkToken()).toEqual("DEFAULTARK");
+      store.dispatch("network/setDefaults", { token: "DEFAULTUCT" });
+      expect(wrapper.vm.networkToken()).toEqual("DEFAULTUCT");
     });
     it("should return an empty string if no token has been set", () => {
       store.dispatch("network/setDefaults", {});

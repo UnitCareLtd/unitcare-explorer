@@ -16,7 +16,7 @@ const lockPropertyArray = [
 
 describe("Services > Lock", () => {
   beforeAll(() => {
-    store.dispatch("network/setServer", "https://dexplorer.ark.io/api/v2");
+    store.dispatch("network/setServer", "https://dexplorer.unitcare.co/api/v2");
   });
 
   it("should return lock", async () => {

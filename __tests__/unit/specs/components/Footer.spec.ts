@@ -4,7 +4,7 @@ import AppFooter from "@/components/AppFooter";
 import { useI18n } from "../../__utils__/i18n";
 
 global.VUE_APP_GIT_VERSION = "43496685190e3e768c3f5b1bc322ff8b7ed4c696";
-global.VUE_APP_GIT_DATE = "2018-01-01";
+global.VUE_APP_GIT_DATE = "2020-01-18";
 
 describe("Components > Footer", () => {
   const localVue = createLocalVue();

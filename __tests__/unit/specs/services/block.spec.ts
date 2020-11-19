@@ -17,7 +17,7 @@ const blockPropertyArray = [
 
 describe("Services > Block", () => {
   beforeAll(() => {
-    store.dispatch("network/setServer", "https://explorer.ark.io/api");
+    store.dispatch("network/setServer", "https://explorer.unitcare.co/api");
   });
 
   it("should return the latest blocks", async () => {
@@ -117,7 +117,7 @@ describe("Services > Block", () => {
     expect(data[0].id).toBe("2497759a549897ec333ea6d3a22063b54a9a5334e2a7f23417e3dc7d510724ca");
   });
 
-  it("should return all blocks with a total fee exceeding 25 ARK ", async () => {
+  it("should return all blocks with a total fee exceeding 25 UCT ", async () => {
     const minAmount = 25 * 1e8;
     jest.setTimeout(30000);
     const { data } = await BlockService.search({
@@ -130,7 +130,7 @@ describe("Services > Block", () => {
     });
   });
 
-  it("should return all blocks with a total amount between 100 and 500 ARK", async () => {
+  it("should return all blocks with a total amount between 100 and 500 UCT", async () => {
     const minAmount = 100 * 1e8;
     const maxAmount = 500 * 1e8;
     jest.setTimeout(30000);

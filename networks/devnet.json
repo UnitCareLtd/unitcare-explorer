@@ -1,18 +1,17 @@
 {
-  "title": "DARK Explorer",
-  "server": "https://dexplorer.ark.io/api",
-  "alias": "Development",
-  "activeDelegates": 51,
-  "rewardOffset": 10800,
-  "currencies": [],
-  "defaults": {
-    "token": "DARK",
-    "symbol": "DѦ",
-    "currency": null,
-    "priceChartOptions": {
-      "enabled": false,
-      "period": "day",
-      "type": "price"
+    "title": "UnitCare Explorer",
+    "server": "https://explorer.unitcare.co/api",
+    "alias": "Development",
+    "activeDelegates": 51,
+    "rewardOffset": 10800,
+    "currencies": [],
+    "defaults": {
+        "token": "UnitCare Token",
+        "symbol": "UCT",
+        "currency": null,
+        "priceChartOptions": {
+            "enabled": false,
+            "period": "day",
+            "type": "price"
+        }
     }
-  }
-}

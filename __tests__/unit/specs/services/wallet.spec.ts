@@ -15,7 +15,7 @@ const walletPropertyArray = [
 // Note: publicKey, secondPublicKey, username and vote can also be returned, but are optional
 
 beforeAll(() => {
-  store.dispatch("network/setServer", "https://explorer.ark.io/api");
+  store.dispatch("network/setServer", "https://explorer.unitcare.co/api");
 });
 
 describe("Services > Wallet", () => {

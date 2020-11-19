@@ -105,11 +105,11 @@
         "vue-template-compiler": "^2.6.11"
     },
     "bugs": {
-        "url": "https://github.com/unitcare/explorer/issues"
+        "url": "https://github.com/UnitCare/explorer/issues"
     },
     "license": "MIT",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/unitcare/explorer.git"
+        "url": "git+https://github.com/UnitCare/explorer.git"
     }
 }

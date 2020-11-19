@@ -3,7 +3,7 @@ import store from "@/store";
 
 describe("Blockchain Service", () => {
   beforeAll(() => {
-    store.dispatch("network/setServer", "https://explorer.ark.io/api");
+    store.dispatch("network/setServer", "https://explorer.unitcare.co/api");
   });
 
   it("should return the block height", async () => {

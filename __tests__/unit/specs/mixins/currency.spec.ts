@@ -31,15 +31,15 @@ describe("Mixins > Currency", () => {
 
   describe("rawCurrency", () => {
     it("should display selected cryptocurrency with 8 digits or less", () => {
-      store.dispatch("network/setToken", "ARK");
-      expect(wrapper.vm.rawCurrency(10.1234567891234, "ARK")).toEqual(displayCrypto(10.12345679));
+      store.dispatch("network/setToken", "UCT");
+      expect(wrapper.vm.rawCurrency(10.1234567891234, "UCT")).toEqual(displayCrypto(10.12345679));
       expect(wrapper.vm.rawCurrency(10.1234567891234, "ETH")).toEqual(displayCrypto(10.12345679));
       expect(wrapper.vm.rawCurrency(10.1234567891234, "BTC")).toEqual(displayCrypto(10.12345679));
-      expect(wrapper.vm.rawCurrency(10.12345, "ARK")).toEqual(displayCrypto(10.12345));
+      expect(wrapper.vm.rawCurrency(10.12345, "UCT")).toEqual(displayCrypto(10.12345));
     });
 
     it("should display non-cryptocurrency always with 2 digits", () => {
-      store.dispatch("network/setToken", "ARK");
+      store.dispatch("network/setToken", "UCT");
       expect(wrapper.vm.rawCurrency(10.1234567891, "USD")).toEqual(displayFiat(10.12));
       expect(wrapper.vm.rawCurrency(10.1234567891, "AUD")).toEqual(displayFiat(10.12));
       expect(wrapper.vm.rawCurrency(10.1234567891, "EUR")).toEqual(displayFiat(10.12));
@@ -84,10 +84,10 @@ describe("Mixins > Currency", () => {
       });
     };
 
-    store.dispatch("network/setToken", "ARK");
+    store.dispatch("network/setToken", "UCT");
 
     it("should properly format the given data", () => {
-      expect(wrapper.vm.readableCurrency(100000000, null, "ARK")).toEqual("1 Ѧ");
+      expect(wrapper.vm.readableCurrency(100000000, null, "UCT")).toEqual("1 Ѧ");
       expect(wrapper.vm.readableCurrency(1000000000, null, "BTC")).toEqual("10 Ƀ");
       expect(wrapper.vm.readableCurrency(10000000000, null, "ETH")).toEqual("100 Ξ");
       expect(wrapper.vm.readableCurrency(100000000000, null, "LTC")).toEqual(`${Number(1000).toLocaleString()} Ł`);
