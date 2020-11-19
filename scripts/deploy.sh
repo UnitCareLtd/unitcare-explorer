@@ -16,6 +16,6 @@ git add -A
 git commit -m 'chore: explorer [ci skip]'
 
 # deploy
-git push -f git@github.com:ArkEcosystem/explorer.git master:gh-pages
+git push -f git@github.com:UnitCare/explorer.git master:gh-pages
 
 cd -
